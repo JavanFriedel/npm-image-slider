@@ -149,18 +149,16 @@ function imageSlider(images, timer) {
   return containingBlock;
 }
 
-// const container = document.querySelector('.container');
+const container = document.querySelector('.container');
 
-// container.append(
-//   imageSlider(
-//     [
-//       'https://picsum.photos/1500/700?random=1',
-//       'https://picsum.photos/1500/700?random=2',
-//       'https://picsum.photos/1500/700?random=3',
-//       'https://picsum.photos/1500/700?random=4',
-//     ],
-//     5000
-//   )
-// );
-
-module.exports.imageSlider = imageSlider;
+container.append(
+  imageSlider(
+    [
+      'https://picsum.photos/1500/700?random=1',
+      'https://picsum.photos/1500/700?random=2',
+      'https://picsum.photos/1500/700?random=3',
+      'https://picsum.photos/1500/700?random=4',
+    ],
+    5000
+  )
+);
